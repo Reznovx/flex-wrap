@@ -1,0 +1,50 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>buang kolom</title>
+	<link rel="stylesheet" href="styles.css">
+<style>
+	.bungkus {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	
+	/* default/first Breakpoint | Untuk mobile phones */
+	.box {
+		height: 100%;
+		width: 100%;
+	}
+	
+	/* second Breakpoint | Untuk tablets */
+	@media screen and (min-width: 600px) {
+		.dark_blue {
+			width: 25%;
+		}
+	
+		.blue {
+			width: 75%;
+		}
+	}
+	
+	/* third Breakpoint | Untuk desktop */
+	@media screen and (min-width: 768px) {
+		.dark_blue, .light_blue {
+			width: 25%;
+		}
+	
+		.blue {
+			width: 50%;
+		}
+	}
+</style>
+</head>
+<body>
+<div class="bungkus">
+  <div class="box dark_blue">1</div>
+  <div class="box blue">2</div>
+  <div class="box light_blue">3</div>
+</div>
+</body>
+</html>
